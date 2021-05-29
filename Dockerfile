@@ -22,7 +22,7 @@ RUN apk add --update --no-cache \
     wget \
     && rm -rf /var/cache/apk/*
 
-RUN npm install -g yarn pm2 ts-node \
+RUN npm install -g pm2 typescript @types/node ts-node \
     && node --version \
     && npm --version \
     && yarn versions
